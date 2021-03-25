@@ -20,7 +20,7 @@ async function run() {
     const runnerTempDirectory = process.env['RUNNER_TEMP']; // Using process.env until the core libs are updated
     const kubeconfigPath = path.join(runnerTempDirectory, `kubeconfig_${Date.now()}`);
     core.debug(`Writing kubeconfig contents to ${kubeconfigPath}`);
-    fs.writeFileSync(kubeconfigPath, kubeconfig);
+    fs.writeFileSync(kubeconfigPath, JSON.stringify(config));
     fs.chmodSync(kubeconfigPath, '600');
     core.exportVariable('KUBECONFIG', kubeconfigPath);
     console.log('KUBECONFIG environment variable is set');
