@@ -1,0 +1,29 @@
+name: 'HuaweiCloud CCE cluster context'
+description: 'Get the HuaweiCloud CCE cluster credential'
+inputs:
+  access-key-id:
+    description: 'Access key id'
+    required: true
+    default: ''
+  access-key-secret:
+    description: 'Secret access key'
+    required: true
+    default: ''
+  region:
+    description: 'Region'
+    required: false
+    default: 'ap-southeast-3'
+  project-id:
+    description: 'Project id'
+    required: true
+    default: ''
+  cluster-id:
+    description: 'Cluster id'
+    required: true
+    default: ''
+branding:
+  color: 'green'
+  icon: 'anchor'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

@@ -1,0 +1,38 @@
+{
+  "name": "swr-login",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "prepare": "ncc build src/login.js -o dist --source-map --license licenses.txt",
+    "all": "npm run lint && npm run prepare"
+  },
+  "keywords": [
+    "actions",
+    "HuaweiCloud",
+    "container",
+    "github",
+    "CCE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liusheng/cce-context.git"
+  },
+  "author": "liusheng2048@gmaili.com",
+  "license": "Apache",
+  "bugs": {
+    "url": "https://github.com/liusheng/cce-context/issues"
+  },
+  "homepage": "https://github.com/liusheng/cce-context#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/io": "^1.0.2",
+    "axios": "^0.21.1",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.32"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.24.0",
+    "eslint": "^7.4.0"
+  }
+}
