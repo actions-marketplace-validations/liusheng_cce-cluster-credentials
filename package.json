@@ -1,5 +1,5 @@
 {
-  "name": "cce-context",
+  "name": "cce-cluster-credentials",
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
@@ -16,14 +16,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/liusheng/cce-context.git"
+    "url": "git+https://github.com/liusheng/cce-cluster-credentials.git"
   },
   "author": "liusheng2048@gmaili.com",
   "license": "Apache",
   "bugs": {
-    "url": "https://github.com/liusheng/cce-context/issues"
+    "url": "https://github.com/liusheng/cce-cluster-credentials/issues"
   },
-  "homepage": "https://github.com/liusheng/cce-context#readme",
+  "homepage": "https://github.com/liusheng/cce-cluster-credentials#readme",
   "dependencies": {
     "@actions/core": "^1.2.6",
     "@actions/io": "^1.0.2",

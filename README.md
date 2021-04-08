@@ -1,7 +1,7 @@
 # Log in to a container registry
 Use this GitHub Action to [get HuaweiCloud CCE cluster credential](https://www.huaweicloud.com/en-us/product/cce.html).
 ```yaml
-- uses: liusheng/cce-context@v1
+- uses: liusheng/cce-cluster-credentials@v1
   with:
     region: '<region id>' # example: ap-southeast-3
     access-key-id: '<access key id>'

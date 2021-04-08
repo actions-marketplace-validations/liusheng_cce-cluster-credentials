@@ -1,4 +1,4 @@
-name: 'HuaweiCloud CCE cluster context'
+name: 'HuaweiCloud CCE cluster credentials'
 description: 'Get the HuaweiCloud CCE cluster credential'
 inputs:
   access-key-id:
