@@ -1,5 +1,5 @@
-name: 'HuaweiCloud CCE cluster credentials(experimental)'
-description: 'Get the HuaweiCloud CCE cluster credential'
+name: 'Huawei Cloud CCE cluster credentials(experimental)'
+description: 'Get the Huawei Cloud CCE cluster credential'
 inputs:
   access-key-id:
     description: 'Access key id'

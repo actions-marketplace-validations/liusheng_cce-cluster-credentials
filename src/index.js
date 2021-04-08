@@ -13,7 +13,7 @@ async function run() {
     let region = core.getInput('region', { required: true });
     let project_id = core.getInput('project-id', { required: true });
     let cluster_id = core.getInput('cluster-id', { required: true });
-    let url = `https://cce.${region}.myhuaweicloud.com/api/v3/projects/${project_id}/clusters/${cluster_id}/clustercert`;
+    let url = `https://cce.ap-southeast-3.myhuaweicloud.com/api/v3/projects/${project_id}/clusters/${cluster_id}/clustercert`;
     http_request.init_sign({AccessKey:`${ak}`, SecretKey:`${sk}`});
     config = await http_request.http_request("POST", url, '', {"duration": 1});
 
